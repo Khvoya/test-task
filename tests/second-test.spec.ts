@@ -4,13 +4,14 @@ import { MainPage } from '../modules/MainPage'
 import { WebinarsPage } from '../modules/WebinarsPage'
 import { MenuItems, NavBarItems } from '../types/NavBarItems'
 
-// Тест 2
-// Сценарий:
-// - Перейти на https://www.ptsecurity.com/ru-ru
-// - Перейти через главное меню в Исследования-Вебинары
-// - На первой странице списка вебинаров проверить, что ко всем прошедшим вебинарам добавлены кнопки
-// "Смотреть запись" и "Скачать презентацию", а для предстоящих вебинаров этих кнопок нет,
-//  но есть ссылка "Добавить в календарь", и что она не "битая" (ведёт на существующий файл)
+// Test 2
+// Scenario:
+// - Go to https://www.ptsecurity.com/ru-ru
+// - Go through the main menu to Research-Webinars
+// - On the first page of the list of webinars, check that the "Watch recording" and
+//   "Download presentation" buttons have been added to all past webinars.Also check
+//   that there are no mentioned buttons for upcoming webinars, but there is a 
+//   "Add to calendar" link, and that it redirects to an existing file)
 
 test.describe.configure({ mode: 'serial' })
 test("Old webinars have download buttons, and future webinars haven't", async ({

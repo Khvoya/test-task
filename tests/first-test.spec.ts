@@ -4,13 +4,15 @@ import { MainPage } from '../modules/MainPage'
 import { ProductsPage } from '../modules/ProductsPage'
 import { NavBarItems } from '../types/NavBarItems'
 
-// Тест 1
-// Предусловия:
-// - Имеется сохранённый эталонный список названий всех продуктов со страницы https://www.ptsecurity.com/ru-ru/products/
-// Сценарий:
-// - Перейти на https://www.ptsecurity.com/ru-ru
-// - Перейти через главное меню на страницу Продукты
-// - Проверить, что страница содержит информацию обо всех продуктах из списка в предусловии
+// Test 1
+// Preconditions:
+// - There is a saved reference list of names of all products from the page
+//   https://www.ptsecurity.com/ru-ru/products/
+// Scenario:
+// - Go to https://www.ptsecurity.com/ru-ru
+// - Go through the main menu to the Products page
+// - Check that the page contains information about all products
+//   from the list in the precondition
 
 let ethalonProducts: string[]
 test.beforeEach(async ({ page }) => {

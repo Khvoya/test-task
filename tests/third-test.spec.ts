@@ -4,13 +4,17 @@ import { MainPage } from '../modules/MainPage'
 import { SearchResultPage } from '../modules/SearchResultPage'
 import { CheckBoxes } from '../types/CheckBoxes'
 
-// Тест 3
-// Сценарий:
-// - Перейти на https://www.ptsecurity.com/ru-ru
-// - В поле поиска по сайту ввести Positive Hack Days, сделать вывод в консоль длительность поиска (в миллисекундах)
-// - В блоке "Разделы сайта" на странице с результатами поиска поставить галочки только для "Пресс мероприятия", "СМИ о нас" и "Спикеры"
-// - Проверить в результатах поиска, что каждый из разделов содержит хотя бы по одной найденной странице
-// - Проверить в результатах поиска, что в названии или в тексте под названием содержится искомая фраза и выделена жирным шрифтом
+// Test 3
+// Scenario:
+// - Go to https://www.ptsecurity.com/ru-ru
+// - In the site search field, enter "Positive Hack Days", display the duration
+//   of the search in the console (in milliseconds)
+// - In the "Site sections" block on the page with search results, check
+//   the boxes only for "Пресс мероприятия", "СМИ о нас" and "Спикеры"
+// - Check in the search results that each of the sections contains
+//   at least one found page
+// - Check in the search results that the title or the text under the title
+//   contains the phrase you are looking for and is in bold
 
 const text = 'Positive Hack Days'
 
